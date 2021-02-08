@@ -28,7 +28,7 @@ variable "memory_reservation" {
 variable "cluster_arn" {}
 variable "log2elasticsearch_lambda_function_arn" {}
 variable "docker_image" {
-  default = "ghrcdaac/dmrpp-generator:latest"
+  default = "nsidc/dmrpp-generator:dmrpp-url_path"
 }
 
 variable "volumes" {
@@ -36,4 +36,3 @@ variable "volumes" {
   type    = list(object({ name = string, host_path = string, container_path = string }))
   default = []
 }
-
