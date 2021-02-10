@@ -20,7 +20,7 @@ module "dmrpp_service" {
   tags   = local.default_tags
   cluster_arn                           = var.cluster_arn
   desired_count                         = var.desired_count
-  image                                 = "nsidc/dmrpp-generator:dmrpp-url_path"
+  image                                 = "nsidc/dmrpp-generator:dmrpp-url_path_1.0.5"
   log2elasticsearch_lambda_function_arn = var.log2elasticsearch_lambda_function_arn
   cpu                = var.cpu
   memory_reservation = var.memory_reservation
