@@ -28,7 +28,7 @@ variable "memory_reservation" {
 variable "cluster_arn" {}
 variable "log2elasticsearch_lambda_function_arn" {}
 variable "docker_image" {
-  default = "nsidc/dmrpp-generator:dmrpp-url_path_1.0.5"
+  default = "nsidc/dmrpp-generator:dmrpp-url_path_1.0.6_alpha"
 }
 
 variable "volumes" {
